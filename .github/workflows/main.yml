@@ -26,3 +26,4 @@ jobs:
         with:
           branch: gh-pages  # The branch the output should be pushed to
           folder: out       # The folder that contains the static site files
+          token: ${{ secrets.GH_TOKEN }}
