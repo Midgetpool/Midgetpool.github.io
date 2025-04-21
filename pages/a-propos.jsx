@@ -269,9 +269,17 @@ export default function AProposDeMoi(props) {
 
 	useEffect(() => {
 		async function fetchGithubStats() {
-			const response = await fetch("https://api.github.com/users/0xtter");
-			const json = await response.json();
-			setGithubUserData(json);
+			try {
+				const response = await fetch("https://api.github.com/users/Midgetpool", {
+					headers: {
+						Authorization: `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`
+					}
+				});
+				const json = await response.json();
+				setGithubUserData(json);
+			} catch (error) {
+				console.error("Failed to fetch GitHub data:", error);
+			}
 		}
 		fetchGithubStats();
 	}, []);
@@ -321,7 +329,7 @@ export default function AProposDeMoi(props) {
 							<p>{language.aboutMePage.paragraph_three}</p>
 							<div className="tech-and-cv">
 								<SocialNetworkRowStack />
-								<ButtonCV href="https://elliptic-explorer.0xtter.com/CV_ThomasDesrumeaux.pdf" target="_blank" data-splitbee-event="Download CV">
+								<ButtonCV href="https://github.com/Midgetpool/AngadSingh_CV/blob/f3f752e3152b35068aa48cf16a803ee5dfe2ce6b/Profile.pdf" target="_blank" data-splitbee-event="Download CV">
 									Download CV
 								</ButtonCV>
 							</div>

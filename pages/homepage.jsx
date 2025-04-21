@@ -165,7 +165,7 @@ export default function HomePage() {
 				<TitleLandingContainer>
 					<SubTitleLanding>{language.landingPage.apresentationText}</SubTitleLanding>
 					<TypeAnimation
-						sequence={["Thomas Desrumeaux", 5000, "0xtter", 5000]}
+						sequence={["Angad Singh Chandhok", 5000, "Midgetpool", 5000]}
 						speed={50}
 						className="type-string"
 						repeat={Infinity}

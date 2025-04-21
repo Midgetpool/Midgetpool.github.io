@@ -1,86 +1,86 @@
 {
 	"id": "frfr",
 	"navbarMenu": {
-		"labelHome": "MENU PRINCIPAL",
-		"labelServices": "MES DOMAINES",
+		"labelHome": "HOME",
+		"labelServices": "MY DOMAINS",
 		"labelAboutMe": "WHOAMI",
-		"labelPortifolio": "PROJETS",
+		"labelPortifolio": "PROJECTS",
 		"labelExperience": "EXPERIENCES"
 	},
 	"landingPage": {
 		"apresentationText": "Hello World,",
-		"resumeText": "🕵️ Analyste CSIRT, j'accompagne les victimes de cyberattaques dans leur compréhension de l'incident et dans la remédiation post-attaque. 🧑‍💻 Self-hoster, je conçois, développe et héberge mes propres outils et infrastructures indépendamment des services cloud. 🤖 Domoticien, je créé et installe des modules domotiques permettant d'automatiser des tâches quotidiennes.",
-		"buttonText": "A propos de moi"
+		"resumeText": "Cybersecurity Expert, I specialize in web application penetration testing, identifying and exploiting vulnerabilities to help organizations strengthen their defenses.🛡️  Certified Professional, I hold two recognized certifications: CCNA (Cisco Certified Network Associate) by Cisco and Certified in Cybersecurity (CC) by (ISC)². 🎓Security Enthusiast, I stay updated on the latest threats, tools, and techniques to ensure robust, real-world protection in an ever-evolving digital landscape. 🧠",
+		"buttonText": "MORE ABOUT ME"
 	},
 	"servicesOffer": {
-		"title": "Mes domaines",
+		"title": "My Domains",
 		"cards": {
-			"forensique": {
-				"title": "Forensique",
-				"contentText": "Compétences avancées en forensique digitale: acquisition des données, analyse des preuves et développement d'outils d'analyse."
+			"pentesting": {
+				"title": "Web Application Pentesting",
+				"contentText": "Skilled in identifying and exploiting vulnerabilities in web applications. Experienced with tools like Burp Suite, OWASP ZAP, and Nmap. Proficient in reconnaissance, injection attacks, session management flaws, and secure coding recommendations."
 			},
-			"reverse": {
-				"title": "Reverse",
-				"contentText": "Solides compétences en analyse statique/dynamique de binaire et en désobfuscation de logiciels malveillants."
+			"cybersecurityFundamentals": {
+				"title": "Cybersecurity Fundamentals",
+				"contentText": "Strong foundation in cybersecurity principles based on ISC2 CC certification. Knowledge in access control, security operations, risk management, incident response, and the fundamentals of protecting systems and data."
 			},
-			"devsecops": {
-				"title": "DevSecOps",
-				"contentText": "Mise en place et hébergement d'outils et de solutions tout en prenant en compte la sécurité informatique et de la conformité réglementaire. Compétent en CI/CD et sécurité réseau."
+			"networking": {
+				"title": "Networking",
+				"contentText": "Understanding of core networking concepts including IP addressing, subnetting, routing & switching, OSI model, and troubleshooting network connectivity. Hands-on experience with configuring and managing network devices."
 			},
-			"domotique": {
-				"title": "domotique",
-				"contentText": "Hébergement local de solutions domotiques. Installation, création, connexion d'appareils domotiques permettant d'automatiser des tâches quotidiennes répétitives."
+			"networkSecurity": {
+				"title": "Network Security",
+				"contentText": "Experience in securing network infrastructures using firewalls, VPNs, and access control mechanisms. Able to detect and mitigate network-based attacks and implement security best practices to protect data in transit."
 			},
-			"developpement": {
-				"title": "Développement",
-				"contentText": "Expertise en Java, Python, C/C++, Javascript, Bash, Docker et autres. Utilisation avancée de Github pour la gestion de versions et la collaboration sur des projets personnels et professionnels."
+			"riskManagement": {
+				"title": "Risk Management",
+				"contentText": "Expert in identifying, assessing, and mitigating cybersecurity risks. Proficient in developing risk management frameworks, risk assessments, and implementing mitigation strategies."
 			}
 		}
 	},
 	"aboutMePage": {
-		"title": "WHOAMI?",
-		"paragraph_one": "Je travaille actuellement en tant qu'analyse CSIRT à Orange Cyberdefense.",
-		"paragraph_two": "Ingénieur cybersécurité expérimenté, je mets un point d'honneur sur la protection des données et la sécurité informatique. Fort de mes expériences personnelles comme professionnelles, je me suis spécialisé dans la mise en place de systèmes de sécurité solides pour les applications que je développe et déploie. Je suis également habile dans la rétro-ingénieurie statique ou dynamique d'applications, me permettant ainsi de compléter mes compétences forensiques avec de l'analyse de malwares souvent obfusqués.",
-		"paragraph_three": "En tant que self-hosteur, je crois fermement que chacun devrait avoir le contrôle total sur ses données et ne doit pas dépendre des services en ligne. Ainsi, pendant mon temps libre j'héberge localement mes propres sites internet, applications et services, au travers de docker et d'outils de virtualisation, notamment afin d'éviter la dépendance aux grands fournisseurs de services en ligne. J'aime partager mes connaissances et expériences avec les autres pour les aider à comprendre les avantages du self-hosting et à se lancer dans l'aventure. De manière analogue, j'héberge directement plusieurs outils de domotique avancés auquels contribue régulièrement au développement.",
+		"title": "WHOAMI",
+		"paragraph_one": "I am currently working as a Web Application Penetration Tester.",
+		"paragraph_two": "As a cybersecurity expert with certifications in networking (CCNA) and foundational security (ISC2 CC), I am passionate about protecting systems, networks, and applications. I specialize in identifying vulnerabilities in web platforms and strengthening security measures for organizations. My focus lies in offensive security, compliance, and incident prevention. I aim to provide practical and effective solutions to help secure digital assets across various industries.",
+		"paragraph_three": "I strongly believe in hands-on learning and staying curious in the ever-evolving world of cybersecurity. I enjoy building my own labs, testing real-world scenarios, and sharing knowledge through content creation. Whether it’s capturing flags, simulating attacks, or raising awareness, I’m committed to helping others understand and embrace cybersecurity practices with confidence.",
 		"github_card": {
 			"followers": "followers",
 			"following": "following",
 			"repos": "repos"
 		},
-		"alt_dev_img": "0xtter"
+		"alt_dev_img": "Midgetpool"
 	},
-	"portifolioPage": {
-		"title": "PROJETS",
-		"labelFilter": "TOUS",
-		"createdLabel": "Créé le"
+	"portfolioPage": {
+		"title": "PROJECTS",
+		"labelFilter": "ALL",
+		"createdLabel": "Created on"
 	},
 	"experiencePage": {
 		"title": "EXPERIENCES",
 		"timeline": {
 			"labelPosition": "Position",
-			"labelTitle": "Intitulé",
-			"labelCompany": "Entreprise",
-			"labelCategory": "Catégorie",
+			"labelTitle": "Title",
+			"labelCompany": "Company",
+			"labelCategory": "Category",
 			"labelInstitution": "Institution",
-			"labelProfessionalCourse": "Cours professionnels",
-			"labelBachelorDegree": "Baccalauréat",
-			"labelExtensionCourse": "Cours d'extension"
+			"labelProfessionalCourse": "Professional Courses",
+			"labelBachelorDegree": "Bachelor's Degree",
+			"labelExtensionCourse": "Extension Courses"
 		}
 	},
 	"footer": {
 		"labelNavigation": {
 			"title": "Navigation",
-			"labelHome": "Menu principal",
-			"labelServices": "Mes domaines",
+			"labelHome": "Main Menu",
+			"labelServices": "My Domains",
 			"labelAboutMe": "Whoami",
-			"labelPortifolio": "Projets",
-			"labelExperience": "Expériences"
+			"labelPortfolio": "Projects",
+			"labelExperience": "Experiences"
 		},
 		"labelHost": {
-			"title": "HEBERGEMENT"
+			"title": "HOSTING"
 		},
 		"labelSourceCode": {
-			"title": "CODE SOURCE"
+			"title": "SOURCE CODE"
 		},
 		"labelTechs": {
 			"title": "TECHNOLOGIES"

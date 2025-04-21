@@ -51,6 +51,7 @@ const CardService = styled.div`
 		font-weight: 900;
 		margin-top: 5px;
 		margin-bottom: 20px;
+		text-align: center;
 
 		@media (max-width: 900px) {
 			font-size: 18px;
@@ -111,36 +112,40 @@ export default function _ServicesOffer() {
 				<Fade triggerOnce delay={200}>
 					<CardService>
 						<MagnifyingGlass />
-						<h3>{language.servicesOffer.cards.forensique.title}</h3>
-						<p>{language.servicesOffer.cards.forensique.contentText}</p>
+						<h3>{language.servicesOffer.cards.pentesting.title}</h3>
+						<p>{language.servicesOffer.cards.pentesting.contentText}</p>
 					</CardService>
 				</Fade>
+
 				<Fade triggerOnce delay={400}>
 					<CardService>
 						<WindowWrench />
-						<h3>{language.servicesOffer.cards.reverse.title}</h3>
-						<p>{language.servicesOffer.cards.reverse.contentText}</p>
+						<h3>{language.servicesOffer.cards.cybersecurityFundamentals.title}</h3>
+						<p>{language.servicesOffer.cards.cybersecurityFundamentals.contentText}</p>
 					</CardService>
 				</Fade>
+
 				<Fade triggerOnce delay={600}>
 					<CardService>
 						<ShieldKeyhole />
-						<h3>{language.servicesOffer.cards.devsecops.title}</h3>
-						<p>{language.servicesOffer.cards.devsecops.contentText}</p>
+						<h3>{language.servicesOffer.cards.networking.title}</h3>
+						<p>{language.servicesOffer.cards.networking.contentText}</p>
 					</CardService>
 				</Fade>
+
 				<Fade triggerOnce delay={800}>
 					<CardService>
 						<Homeassistant />
-						<h3>{language.servicesOffer.cards.domotique.title}</h3>
-						<p>{language.servicesOffer.cards.domotique.contentText}</p>
+						<h3>{language.servicesOffer.cards.networkSecurity.title}</h3>
+						<p>{language.servicesOffer.cards.networkSecurity.contentText}</p>
 					</CardService>
 				</Fade>
-				<Fade triggerOnce delay={1000}>
+
+				<Fade triggerOnce delay={800}>
 					<CardService>
-						<CodeBlock />
-						<h3>{language.servicesOffer.cards.developpement.title}</h3>
-						<p>{language.servicesOffer.cards.developpement.contentText}</p>
+						<Homeassistant />
+						<h3>{language.servicesOffer.cards.riskManagement.title}</h3>
+						<p>{language.servicesOffer.cards.riskManagement.contentText}</p>
 					</CardService>
 				</Fade>
 			</ContainerGrid>

@@ -312,7 +312,7 @@ export default function Portifolio() {
 	const [stack, setStack] = useState("TODOS");
 
 	// Fetch data from my personnal GitHub account to list repositories
-	const [url, setURL] = useState('https://api.github.com/users/0xtter/repos');
+	const [url, setURL] = useState('https://api.github.com/users/Midgetpool/repos');
 	const data = FetchData(url);
 
 	const topicsIcons = {
@@ -489,7 +489,7 @@ export default function Portifolio() {
 			</ChipTechOptions> */}
 
 			<ContainerTitleSection>
-				<TitleSection>{language.portifolioPage.title}</TitleSection>
+				<TitleSection>{language.portfolioPage.title}</TitleSection>
 			</ContainerTitleSection>
 			<ContainerGrid view={view}>
 				{data ? (
@@ -544,7 +544,7 @@ export default function Portifolio() {
 								</WrapperTechStack>
 
 								<span className="created_at">
-									{language.portifolioPage.createdLabel}: {formatDate(project.created_at)}
+									{language.portfolioPage.createdLabel}: {formatDate(project.created_at)}
 								</span>
 							</WrapperProjectCard>
 						</Fade>

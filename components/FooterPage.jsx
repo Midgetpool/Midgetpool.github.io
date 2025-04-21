@@ -23,7 +23,7 @@ const FooterContainer = styled.footer`
 
 	#grid {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: 1fr;
 		grid-column-gap: 20px;
 		grid-row-gap: 0px;
@@ -287,14 +287,14 @@ export default function FooterPage(props) {
 					</SectionFooterMenu>
 				</Fade>
 
-				<Fade triggerOnce delay={400}>
+				{/* <Fade triggerOnce delay={400}>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelSourceCode.title}</FooterTextTitle>
 						<FooterTextExternalLink href="https://github.com/0xtter/Portfolio" target="_blank">
 							Github
 						</FooterTextExternalLink>
 					</SectionFooterMenu>
-				</Fade>
+				</Fade> */}
 
 				<Fade triggerOnce delay={600}>
 					<SectionFooterMenu>
@@ -316,7 +316,6 @@ export default function FooterPage(props) {
 			</div>
 			<Divider />
 			<ContainerBuildCopyright>
-				<LanguageSwitchButton />
 				<SocialNetworkRowStack />
 				<div className="build-and-button-top">
 					<TextBuildProject>
