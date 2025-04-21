@@ -1,5 +1,6 @@
-name: Gitea Actions Demo
-run-name: ${{ github.actor }} is testing out Gitea Actions 🚀
+name: Deploy Next.js to GitHub Pages 🚀
+run-name: ${{ github.actor }} is testing out Gitea Actions
+
 on: [push]
 
 jobs:
@@ -15,20 +16,13 @@ jobs:
           node-version: '18.x'
 
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm install
 
-      - name: Build and Export static site
-        run: |
-          npm run build
-          npm run export
+      - name: Build static site
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: out
-
-          
-
-
+          branch: gh-pages  # The branch the output should be pushed to
+          folder: out       # The folder that contains the static site files
