@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out Gitea Actions 🚀
 on: [push]
 
 jobs:
-  Explore-Gitea-Actions:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -18,10 +18,17 @@ jobs:
         run: |
           npm install
 
-      - name: Build Next.js site
+      - name: Build and Export static site
         run: |
           npm run build
+          npm run export
 
-      # Deployment can go here (e.g., Vercel, Netlify, etc.)
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: out
+
+          
 
 
