@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[856],{4726:(_,n,o)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/portfolio",function(){return o(7522)}])}},_=>{var n=n=>_(_.s=n);_.O(0,[95,522,636,593,792],()=>n(4726)),_N_E=_.O()}]);
