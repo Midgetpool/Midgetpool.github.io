@@ -6,21 +6,28 @@ jobs:
   Explore-Gitea-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by github!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: Create coverage directory
-        run: mkdir -p coverage
-      - name: Converts Markdown to HTML
-        uses: jaywcjlove/markdown-to-html-cli@main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          source: README.md
-          output: coverage/action.html
-          github-corners: https://github.com/jaywcjlove/markdown-to-html-cli
-      - name: List files in the repository
+          node-version: '16'
+
+      - name: Install dependencies
         run: |
-          echo "${{ github.server_url }}/${{ github.repository }}"
-      - run: ls -la
-      - run: whoami
+          npm install
+
+      - name: Build Next.js site
+        run: |
+          npm run build
+
+      - name: Export static site
+        run: |
+          npm run export
+          
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: out
